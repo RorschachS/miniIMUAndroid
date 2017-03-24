@@ -10,16 +10,43 @@ import android.os.Message;
 import android.app.Activity;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class PlotActivity extends Activity {
 	public Handler drawlineHandler;
 	TextView X,Y,Z ;
+	private float[] mData;
+
+
+	/*private final Handler mHandler = new Handler() {
+		// 匿名内部类写法，实现接口Handler的一些方法
+		@Override
+		public void handleMessage(Message msg) {
+			switch (msg.what) {
+
+				case 2:
+					try {
+						float [] fData=msg.getData().getFloatArray("Data");
+						mData=fData;
+					} catch (Exception e) {
+						// TODO: handle exception
+					}
+					break;
+
+			}
+		}
+	};*/
+
+
+
+
+
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.plot_activity);
-
-
 		Intent intent = getIntent();
 		//String jiasudu = String.format("%.2f",intent.getStringExtra(DataMonitor.EXTRA_MESSAGE));
 		float[] jiasudu=intent.getFloatArrayExtra(DataMonitor.EXTRA_MESSAGE);
@@ -32,7 +59,7 @@ public class PlotActivity extends Activity {
 		{
 			public void handleMessage(Message msg)
 			{
-				
+
 				if(msg.what==0x123){
 					String[] xyz=new String[3];
 					xyz=msg.getData().getStringArray("xyz");

@@ -284,14 +284,18 @@ public class DrawLine implements Renderer
 		// --------------------绘制正方体---------------------
 		// 重置当前的模型视图矩阵
 		gl.glLoadIdentity();
+
+
 		gl.glTranslatef(0.0f, -0.0f, -3.0f);//移动中心
 		// 沿着Y轴旋转
-		gl.glRotatef(r, 0f, 0.1f, 0.0f);
-		
+		gl.glRotatef(45f, 0f, 0.1f, 0.0f);
 		//	r++;
-		
 		// 沿着X轴旋转
-		//gl.glRotatef(0f, 0.1f, 0f, 0f);
+		gl.glRotatef(10f, 0.1f, 0f, 0f);
+		// 沿着Z轴旋转
+		//gl.glRotatef(*f,0f,0f,0.1f);
+
+
 		gl.glLineWidth(2.0f);
 		// 设置顶点的位置数据 因为所有的数据都在次数组中，所以长方体和向量的只要设置这一次就好
 		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, lineVerticesBuffer);

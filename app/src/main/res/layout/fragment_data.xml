@@ -249,7 +249,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="绘制"
-            android:onClick="onPlot"
+            android:onClick="ControlClick"
             android:id="@+id/buttonB"
             android:background="@drawable/ic_preference_single_normal" />
 

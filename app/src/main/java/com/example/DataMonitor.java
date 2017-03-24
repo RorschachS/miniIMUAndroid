@@ -680,10 +680,10 @@ public class DataMonitor extends FragmentActivity implements OnClickListener {
 				((TextView)findViewById(R.id.tvDataName3)).setText("HDOP：");((TextView)findViewById(R.id.tvNum3)).setText("0");
 				((TextView)findViewById(R.id.tvDataName4)).setText("VDOP：");((TextView)findViewById(R.id.tvNum4)).setText("0");
 				break;
-			/*case R.id.buttonB:
-				iCurrentGroup=11;
+			case R.id.buttonB:
+				//iCurrentGroup=11;
 				onPlot();
-				break;*/
+				break;
 		}
 		((Button) findViewById(R.id.button0)).setBackgroundResource(R.drawable.ic_preference_single_normal);
 		((Button) findViewById(R.id.button1)).setBackgroundResource(R.drawable.ic_preference_single_normal);
@@ -755,7 +755,7 @@ public class DataMonitor extends FragmentActivity implements OnClickListener {
 	public void onClick(View v) {
 
 	}
-	public final static String EXTRA_MESSAGE="com.example.data";
+	public final static String EXTRA_MESSAGE="com.example.jiasudu";
 	public void onPlot(){
 		float[] jiasudu=new float[4];
 		jiasudu[0]=mData[0];
