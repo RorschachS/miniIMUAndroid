@@ -468,65 +468,69 @@
                     </RelativeLayout>
                 </LinearLayout>
             </ScrollView>
+
         <LinearLayout
-            android:orientation="vertical"
+            android:id="@+id/lljy61"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id = "@+id/lljy61">
+            android:orientation="vertical">
 
             <RelativeLayout
+                android:id="@+id/rlJy61Out"
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:clickable="true"
                 android:background="@drawable/preference_first_item"
-                android:onClick="OnClickJY61Rate"
-                android:id="@+id/rlJy61Out">
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="OnClickJY61Rate">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:text="输出速率"
-                    android:textSize="17sp"
-                    android:textColor="#000" />
+                    android:textColor="#000"
+                    android:textSize="17sp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="matrix"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
                     android:src="@drawable/mm_submenu" />
             </RelativeLayout>
+
             <RelativeLayout
+                android:id="@+id/rlZero"
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
-                android:gravity="center_vertical"
-                android:clickable="true"
                 android:background="@drawable/preference_last_item"
-                android:onClick="OnClickZeroZ"
-                android:id="@+id/rlZero">
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="OnClickZeroZ">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:text="Z轴初始化"
-                    android:textSize="17sp"
-                    android:textColor="#000" />
+                    android:textColor="#000"
+                    android:textSize="17sp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:scaleType="matrix"
-                    android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="matrix"
                     android:src="@drawable/mm_submenu" />
             </RelativeLayout>
 
 
         </LinearLayout>
-        </FrameLayout>
+    </FrameLayout>
 
 
 
